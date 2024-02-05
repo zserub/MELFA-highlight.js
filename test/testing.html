@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+    <link rel="stylesheet"
+        href="d:\Github\highlight.js\extra\MELFA-highlight.js\dist\melfa_dark.min.css">
+</head>
+
+<body style="background-color: #23241F; color: #fff;">
+    <pre><code class="language-melfa">
+28 'Initialize variables
+29 GoSub *INIT
+30 '
+31 'Get Mechanism
+32 GetM 1
+33 '
+34 'Turn off compliance mode
+35 Cmp Off
+36 '
+37 'Turn on Servo
+38 Servo On
+39 Wait M_Svo = 1
+40 '
+41 'Set Speed
+42 JOvrd M_NJovrd
+43 Spd M_NSpd
+44 'M_OPovrd = 20
+45 '
+46 'Set Acceleration and Deceleration
+47 Accel 100,100
+48 '
+49 'Reset Base coordinate system to initial
+50 Base P_NBase
+51 '
+52 'Turn on Collosion detection
+53 ColChk On
+54 '
+55 'Turn on optimal Acceleration/Deceleration
+56 OAdl On
+57 'Set weight and size
+58 Loadset 0,0
+59 '
+60 'Read type-dependant data
+61 Select M_Act_type
+62   Case 1
+63       'Write positions
+64       P_MinCDD_1 = P_MinCDD_1_T1
+
+    </code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="d:\Github\highlight.js\extra\MELFA-highlight.js\dist\melfa.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>

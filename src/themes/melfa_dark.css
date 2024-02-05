@@ -1,0 +1,44 @@
+/* Comments */
+.hljs-comment {
+    color: #6A9955;
+}
+
+/* Meta */
+.hljs-meta {
+    color: #DDBC7A;
+}
+
+/* Numbers */
+.hljs-number {
+    color: #569CD6;
+}
+
+/* Keywords */
+.hljs-keyword {
+    color: #569CD6;
+}
+
+/* Operators */
+.hljs-keyword-operator {
+    color: #b16262;
+}
+
+/* Strings */
+.hljs-string {
+    color: #CE9178;
+}
+
+/* Types */
+.hljs-type {
+    color: #4EC9B0;
+}
+
+/* Functions */
+.hljs-function {
+    color: #4EC9B0;
+}
+
+/* Variables */
+.hljs-variable {
+    color: #DDBC7A;
+}

@@ -1,0 +1,25 @@
+{
+    "name": "melfa-highlight.js",
+    "description": "Mitsubishi robot programming language support for highlight.js",
+    "version": "0.1.0",
+    "author": "Ruben Zsedely",
+    "main": "src/languages/melfa.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zserub/MELFA-highlight.js"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zserub/MELFA-highlight.js/issues"
+    },
+    "keywords": [
+        "language support",
+        "syntax highlight",
+        "MELFA",
+        "Mitsubishi",
+        "robot programming language"
+    ],
+    "devDependencies": {
+        "highlight.js": "^11.9.0"
+    }
+}
