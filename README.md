@@ -2,6 +2,11 @@
 
 *I appreciate any feedback on the colour scheme.*
 
+[![twitter](https://img.shields.io/badge/follow-zserub_-blue?style=flat&logo=Twitter)](https://twitter.com/zserub)
+[![tea](https://img.shields.io/badge/buy%20me-%E2%98%95%EF%B8%8F%20tea-yellow.svg)](https://ko-fi.com/metaphysix)
+
+*Check out my [MELFA extension for VS Code](https://github.com/zserub/MELFA-Basic)*
+
 ## Usage
 
 Detailed information on [Highlight.js](https://highlightjs.org/)
