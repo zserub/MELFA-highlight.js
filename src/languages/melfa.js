@@ -17,36 +17,41 @@ export default function (hljs) {
                 begin: "'.*"
             },
             {
-                className: 'meta',
+                className: 'linenumber',
                 begin: '^\\d+'
             },
             {
-                className: 'number',
+                className: 'number',    //octal
                 begin: '-?&O[0-7]+',
                 relevance: 0,
                 illegal: '\\S'
             },
             {
-                className: 'number',
+                className: 'number',    //hex
                 begin: '-?&H[0-9A-F]+',
                 relevance: 0,
                 illegal: '\\S'
             },
             {
-                className: 'number',
+                className: 'number',    //decimal
                 begin: '-?\\d+(\\.\\d+)?',
                 relevance: 0,
                 illegal: '\\S'
             },
             {
-                className: 'keyword',
-                begin: '\\b(While|Select|Case|Else(If)?|For|To|Return|Default|If|Then|With|EndIf|EndSelect|FEnd|Next|WEnd|Break|And|Not|Or|Xor|Exit|Go(To|Sub)|Dly|Wait|Error|Priority|ResetErr|Stop|Hlt|Clear|Skip|X(Load|Run|Rst|Clr|Stp)|On|Off)\\b',
+                className: 'control',
+                begin: '\\b(While|Select|Case|Else(If)?|For|To|Return|Default|If|Then|With|WthIf|EndIf|EndSelect|FEnd|Next|WEnd|Break|And|Not|Or|Xor)\\b',
                 relevance: 0,
                 illegal: '\\S'
             },
             {
-                className: 'keyword',
+                className: 'operator',
                 begin: '!|\\$|%|&|\\-|\\+|~|==|=|!=|!==|<=|>=|#=|<>|<|>|!|&&|\\|\\||\\?\\:|\\*=|/=|%=|\\+=|\\-=|&=|\\^=\\b'
+            },
+            {
+                className: 'other',
+                begin: '\\b(Exit|Go(To|Sub)|Dly|Wait|Error|Priority|ResetErr|Stop|Hlt|Clear|Skip|X(Load|Run|Rst|Clr|Stp))\\b',
+                case_insensitive: true
             },
             {
                 className: 'string',
@@ -58,8 +63,8 @@ export default function (hljs) {
                 begin: '\\B\\*\\w+'
             },
             {
-                className: 'function',
-                begin: '\\b(Call|Function|Def)\\b',
+                className: 'keyword_bold',
+                begin: '\\b(Call|Function|Def|On|Off)\\b',
                 case_insensitive: true
             },
             {
@@ -82,7 +87,7 @@ export default function (hljs) {
                 case_insensitive: true
             },
             {
-                className: 'variable',
+                className: 'axis',
                 begin: '\\b(\\.X|\\.Y|\\.Z)\\b',
                 case_insensitive: true
             }

@@ -1,12 +1,14 @@
 # MELFA language support for Highlight.js
 
+*I appreciate any feedback on the colour scheme.*
+
 ## Usage
 
 Detailed information on [Highlight.js](https://highlightjs.org/)
 
 ### Online usage for HTMLs
 
-Check 
+Check [examples](https://github.com/zserub/MELFA-highlight.js/blob/main/examples/online_test.html)
 
 ```html
 <link rel="stylesheet" href="https://zserub.github.io/MELFA-highlight.js/dist/melfa_dark.min.css">
@@ -19,7 +21,9 @@ Check
 ```
 
 ### Offline usage for HTMLs
+
 Download `dist/melfa.min.js` and `melfa_dark.min.css`
+
 ```html
 <link rel="stylesheet" href="/path/to/melfa_dark.min.css">
 <pre><code class="language-melfa">

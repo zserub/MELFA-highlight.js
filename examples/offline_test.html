@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <title>Testing</title>
     <link rel="stylesheet"
-        href="d:\Github\highlight.js\extra\MELFA-highlight.js\dist\melfa_dark.min.css">
+        href="d:\Github\highlight.js\extra\MELFA-highlight.js\src\themes\melfa_dark.css">
 </head>
 
-<body style="background-color: #23241F; color: #fff;">
-    <pre><code class="language-melfa">
-28 'Initialize variables
+<body style="background-color: #23241F; color: #fff; font-size: 20px;">
+    <pre><code class="language-melfa">28 'Initialize variables
 29 GoSub *INIT
 30 '
 31 'Get Mechanism
@@ -47,6 +46,43 @@
 62   Case 1
 63       'Write positions
 64       P_MinCDD_1 = P_MinCDD_1_T1
+496      If (P_MinCDD_1.X = 0) Or (P_HiResCDD_1.X = 0) Or (P_MinCID_1.X = 0) Or (P_HiResCID_1.X = 0) Or (P_HiResCID_2.X = 0) Or (P_ALS_1.X = 0) Or (P_MinICD_1.X = 0) Or (P_HiResICD_1.X = 0) Then
+497          'Set Error signal
+498          M_Out(2118) = 1
+499          Error 9057
+500          EndIf
+502   'Write actual type number
+503   M_Act_type = M_Inb(2176)
+504 '
+505   Return
+506 '
+507   '-------------------------------------------------------------------------
+508 '
+509 *SERVICE
+510 '
+511   'Enable Continuous Movement
+512   Cnt 1
+513   'Set Speed
+514   Ovrd M_High_Speed
+515 '
+516   'Select Zone
+517   M_Dest_zone = 4
+518   'Move to Selected Zone
+519   GoSub *ZONE_MOVE
+520 '
+521   'Move to Intermediate postion
+522   Mov J_Corner_1 WthIf M_RDst <= 10, M_Act_point = 101
+523   'Disable Continuous Movement
+524   Cnt 0
+525   'Move to Service position
+526   Fine 0.1, P
+527   Mov J_Service WthIf M_RDst <= 10, M_Act_point = 411
+528   Fine 0, P
+529 '
+530   Return
+531 '
+532   '-------------------------------------------------------------------------
+        M_error = "test string P_asd"
 
     </code></pre>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>

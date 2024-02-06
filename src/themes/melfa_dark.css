@@ -1,44 +1,78 @@
-/* Comments */
-.hljs-comment {
-    color: #6A9955;
+pre code.hljs {
+        display: block;
+        overflow-x: auto;
+        padding: 1em;
+}
+code.hljs {
+        padding: 3px 5px;
+}
+.hljs {
+        background: #23241f;
+        color: #f8f8f2;
 }
 
-/* Meta */
-.hljs-meta {
-    color: #DDBC7A;
+/* Comments */
+.hljs-comment {
+        color: #6a9955;
+}
+
+/* Line numbers */
+.hljs-linenumber {
+        color: #6e7681;
 }
 
 /* Numbers */
 .hljs-number {
-    color: #569CD6;
+        color: #ddbc7a;
 }
 
 /* Keywords */
 .hljs-keyword {
-    color: #569CD6;
+        color: #569cd6;
+}
+
+/* Bold keywords */
+.hljs-keyword_bold {
+        color: #569cd6;
+        font-weight: bold;
 }
 
 /* Operators */
-.hljs-keyword-operator {
-    color: #b16262;
+.hljs-operator {
+        color: #b16262;
 }
 
 /* Strings */
 .hljs-string {
-    color: #CE9178;
+        color: #ce9178;
 }
 
 /* Types */
 .hljs-type {
-    color: #4EC9B0;
+        color: #4ec9b0;
 }
 
 /* Functions */
 .hljs-function {
-    color: #4EC9B0;
+        color: #dcdcaa;
 }
 
 /* Variables */
 .hljs-variable {
-    color: #DDBC7A;
+        color: #9cdcfe;
+}
+
+/* Controls */
+.hljs-control {
+        color: #c586c0;
+}
+
+/* Axis */
+.hljs-axis {
+        color: #ce9178;
+}
+
+/* Other */
+.hljs-other {
+        color: #7f4bbb;
 }
