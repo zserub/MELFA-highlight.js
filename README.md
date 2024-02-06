@@ -8,6 +8,7 @@
 *Check out my [MELFA extension for VS Code](https://github.com/zserub/MELFA-Basic)*
 
 <br>
+
 ![showcase](etc/example.png)
 
 ## Usage
